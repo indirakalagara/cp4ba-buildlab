@@ -67,16 +67,17 @@ variable "ldap_admin_name" {
 }
 
 variable "ldap_admin_password" {
-  default     = ""
+  default = ""
   description = "LDAP Admin password"
 }
 
 variable "hostname" {
-  default     = ""
+  default     = "ldapvm"
   description = "Hostname of the virtual Server"
 }
 
 variable "ldap_host_ip" {
+  default = ""
   description = "LDAP server IP address"
 }
 
@@ -103,17 +104,17 @@ variable "db2_user" {
 }
 
 variable "db2_admin_user_password" {
-  default     = ""
+  default = ""
   description = "Db2 admin user password defined in LDAP"
 }
 
 variable "db2_host_address" {
-  default     = ""
+  default = ""
   description = "Host name for DB2 instance. Ignore if there is not an existing Db2."
 }
 
 variable "db2_ports" {
-  default     = ""
+  default = ""
   description = "List of Port numbers of DB2 instances. Ignore if there is not an existing Db2."
 }
 
